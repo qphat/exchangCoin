@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>     
 using namespace std;
 
-    set<int> cashierAlgorithm(int amount, const std::vector<int>& coins) {
+    set<int> cashierAlgorithm(int amount, const vector<int>& coins) {
     set<int> selectedCoins;  // Tập hợp các đồng xu đã chọn
     int n = coins.size();        // Số lượng loại đồng xu
 
@@ -39,11 +39,11 @@ int main() {
     set<int> result = cashierAlgorithm(amount, coins);
 
    
-    std::cout << "Các đồng xu được sử dụng để đổi " << amount << " là:\n";
+    cout << "Các đồng xu được sử dụng để đổi " << amount << " là:\n";
     for (int coin : result) {
         cout << coin << " ";
     }
-    cout << std::endl;
+    cout << endl;
 
     return 0;
 }
